@@ -26,7 +26,13 @@ const initPlayers = (players) => {
     let detailedPlayers = [];
     // Create players using for loop
     // Type your code here
-
+    for(var i = 0 ; i < players.length ; i++){
+        detailedPlayers[i] = {
+            name: players[i],
+            strength: getRandomStrength(),
+            image: "images/super-" + (i+1) +".png"
+        }
+    }
     return detailedPlayers;
 }
 
